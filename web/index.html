@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Cloud Agent</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Cloud Agent</h1>
+        <form id="agentForm">
+            <label for="command">Select Command Type:</label>
+            <select id="commandType">
+                <option value="terraform">Terraform</option>
+                <option value="cloudformation">CloudFormation</option>
+                <option value="k8s_yaml">Kubernetes YAML</option>
+                <option value="dockerfile">Dockerfile</option>
+                <option value="aws_cli">AWS CLI</option>
+                <option value="azure_cli">Azure CLI</option>
+                <option value="kubectl">Kubectl Command</option>
+            </select>
+            <textarea id="userInput" placeholder="Enter your cloud infrastructure details here..."></textarea>
+            <button type="button" onclick="generateCommand()">Generate</button>
+        </form>
+
+        <div id="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
