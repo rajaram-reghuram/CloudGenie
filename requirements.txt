@@ -3,4 +3,3 @@ torch
 fastapi
 uvicorn
 jinja2
-google-flan-t5
